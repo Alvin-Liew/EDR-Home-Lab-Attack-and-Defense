@@ -13,7 +13,7 @@ Eric Capuano's Guide: https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analys
 - Developing and applying rules in LimaCharlie to detect, block, and mitigate various types of cyber attacks.
 
 ### Tools Used
-- LimaCharlie Endpoint detection and response (EDR) solution to monitor endpoint activities, analyze telemetry, detect threats, and bloack malicios actions.
+- LimaCharlie Endpoint detection and response (EDR) solution to monitor endpoint activities, analyze telemetry, detect threats, and block malicious actions.
 - Sliver C2 framework to generate payloads and manage command and control sessions for simulating attacks on the Windows endpoint.
 - VMware Workstation Pro to create isolated environments for the attack and victim machines, allowing for safe and controlled simulation of cyber attacks and defenses.
 - Sysmon deployed on the Windows machine to log detailed system activities, which were then analyzed by LimaCharlie.
