@@ -56,9 +56,9 @@ Later on the Payload name will change from CRAZY_DEEP TO BOLD_UPPER because I ha
 
 ##
 
-Now that we have a live session between the two machines, the attack machine can begin peeking around, checking priveleges, getting host information, and checking what type of security the host has.
+Now that we have a live session between the two machines, the attack machine can begin peeking around, checking privileges, getting host information, and checking what type of security the host has.
 
-### Checking Priveleges
+### Checking Privileges
 
 ![image](https://github.com/Alvin-Liew/EDR-Home-Lab-Attack-and-Defense/assets/105011531/19241807-e912-4760-b1e4-06111ab467d4)
 
