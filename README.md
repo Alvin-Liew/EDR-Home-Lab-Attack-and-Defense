@@ -74,7 +74,7 @@ If you look all the way to the bottom, this is how attackers become aware of wha
 
 ##
 
-On the host machine we can look inside our LimaCharlie EDR solution and see telemetry from the attacker. We can identify the payload thats running and see the IP its connected to.
+On the host machine we can look inside our LimaCharlie EDR solution and see telemetry from the attacker. We can identify the payload that's running and see the IP it's connected to.
 
 ### Identifying the payload:
 
@@ -132,13 +132,13 @@ Now instead of simply detection, we can practice using LimaCharlie to write a ru
 
 ![image](https://github.com/Alvin-Liew/EDR-Home-Lab-Attack-and-Defense/assets/105011531/93918b98-abd8-4c7d-87f4-9561a47658b3)
 
-(Notice: The D&R rule properly terminated the parent process since the system shell hung and failed to return anything from the whoami command because the parent process was terminated. This is effective because in a real ransomeware senario the parent process is likely the ransomeware payload or lateral movement tool that would be terminated in this case)
+(Notice: The D&R rule properly terminated the parent process since the system shell hung and failed to return anything from the whoami command because the parent process was terminated. This is effective because in a real ransomware scenario the parent process is likely the ransomware payload or lateral movement tool that would be terminated in this case)
 
 ##
 
-Now we will be taking advantage of a more advanced capability if our EDR sensor which is to automatically scan files or processes for the presence of malware based on a Yara signature. 
+Now we will be taking advantage of a more advanced capability of our EDR sensor which is to automatically scan files or processes for the presence of malware based on a Yara signature. 
 
-Yara is a program that is mostly used for binary or tectual pattern-based malware identification and classification. It enables researchers and security experts to create rules that characterize distinctive features of certain malware families or malevolent behaviors. By comparing them to a specified set of criteria, Yara assists in sorting through massive volumes of data to uncover harmful artifacts during system analysis. These rules may then be applied to files, processes, or even network traffic to detect possible threats. Customized detection signature creation is especially helpful for threat hunting and incident response, as it allows for the quick identification of known and even undiscovered harmful materials.
+Yara is a program that is mostly used for binary or textual pattern-based malware identification and classification. It enables researchers and security experts to create rules that characterize distinctive features of certain malware families or malevolent behaviors. By comparing them to a specified set of criteria, Yara assists in sorting through massive volumes of data to uncover harmful artifacts during system analysis. These rules may then be applied to files, processes, or even network traffic to detect possible threats. Customized detection signature creation is especially helpful for threat hunting and incident response, as it allows for the quick identification of known and even undiscovered harmful materials.
 
 Since we already know we’re dealing with the Sliver C2 payload, we can be more targeted in our exercise by using a signature specifically looking for Sliver
 
@@ -164,7 +164,7 @@ Since we already know we’re dealing with the Sliver C2 payload, we can be more
 
 ##
 
-Now we will test the rules by moving the payload file from and back to the orginal destination. Once the scan began and discovered Sliver inside the exe, we should receive a first alert for an exe put in the Downloads directory, followed quickly by a Yara detection. Once the scan began and discovered Sliver inside the exe, we should observe a first warning for Execution from the Downloads directory, followed quickly by a Yara detection in Memory. In order to produce the "new process event" that would cause the scanning of a process that was initiated from the Downloads directory, we will now run the Sliver payload. Once the scan began and discovered Sliver inside the EXE, we should notice a first alert for Execution from the Downloads directory, followed quickly by a YARA detection in Memory.
+Now we will test the rules by moving the payload file from and back to the original destination. Once the scan began and discovered Sliver inside the exe, we should receive a first alert for an exe put in the Downloads directory, followed quickly by a Yara detection. Once the scan began and discovered Sliver inside the exe, we should observe a first warning for Execution from the Downloads directory, followed quickly by a Yara detection in Memory. In order to produce the "new process event" that would cause the scanning of a process that was initiated from the Downloads directory, we will now run the Sliver payload. Once the scan began and discovered Sliver inside the EXE, we should notice a first alert for Execution from the Downloads directory, followed quickly by a YARA detection in Memory.
 
 ### Moving the payload:
 
@@ -187,3 +187,5 @@ Now we will test the rules by moving the payload file from and back to the orgin
 ## Conclusion
 
 We have successfully established a controlled environment for simulating real cyber attacks and implementing endpoint detection and response solutions. Utilizing Eric Capuano's guide, the lab provided hands-on experience in setting up and configuring both attack and defense tools. Key skills acquired included EDR implementation, C2 operations, payload creation, telemetry analysis, and rule writing for threat mitigation. Through practical exercises, the lab enhanced understanding of network security, attack patterns, and effective defensive strategies, demonstrating the critical role of EDR solutions in modern cybersecurity.
+
+
