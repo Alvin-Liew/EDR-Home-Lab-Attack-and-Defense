@@ -8,7 +8,7 @@ Eric Capuano's Guide: https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analys
 ### Skills Learned
 - Setting up and configuring LimaCharlie as an EDR solution to monitor and respond to endpoint activities.
 - Utilizing the Sliver framework to create and manage a C2 session for simulating attacks on a Windows endpoint.
-- Payload Creation and Execution: Generating and implanting a malicious payload on a target machine to simulate a cyber attack.
+- Generating and implanting a malicious payload on a target machine to simulate a cyber attack.
 - Analyzing system telemetry in LimaCharlie to detect and understand malicious activities.
 - Developing and applying rules in LimaCharlie to detect, block, and mitigate various types of cyber attacks.
 
